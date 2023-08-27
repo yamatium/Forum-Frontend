@@ -9,6 +9,8 @@ import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { GamePageComponent } from './pages/game-page/game-page.component';
 import { PostPageComponent } from './pages/post-page/post-page.component';
 import { ReviewPageComponent } from './pages/review-page/review-page.component';
+import { Ssw2Component } from './pages/ssw2/ssw2.component';
+
 
 
 @NgModule({
@@ -19,11 +21,12 @@ import { ReviewPageComponent } from './pages/review-page/review-page.component';
     LayoutPageComponent,
     GamePageComponent,
     PostPageComponent,
-    ReviewPageComponent
+    ReviewPageComponent,
+    Ssw2Component,
   ],
   imports: [
     CommonModule,
-    ForumRoutingModule
+    ForumRoutingModule,
   ]
 })
 export class ForumModule { }

@@ -1,6 +1,29 @@
-<p>forum layout page</p>
+<nav class="navbar navbar-expand-lg bg-secondary"  data-bs-theme="dark"  >
+    <div class="container-fluid ">
+      
+      <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="navbar-brand text-center" routerLink="home">
+            <img src="assets/images/black_2.png" alt="gusHome" width = "40%" >
+          </a>
+          <a class="nav-link" aria-current="page" routerLink="games">Game List</a>
+          <a class="nav-link" routerLink="user/:id">User</a>
+
+          <!-- the login and join buttons should be displayed at the right side of the navbar-->
+          <a class="nav-link text-right" routerLink="login">Login</a>
+          <a class="nav-link text-right" routerLink="register">Join</a>
+          
+        </div>
+      </div>
+    </div>
+  </nav>
 
 <router-outlet></router-outlet>
 
+<div class="Foo ">
+  <img src="assets/images/gusalt.png" alt="gus">
+  <hr>
+  <p>© PezusCorp Inc. All rights reserved 2023</p>
+</div>
 
-<h5>Footer</h5>
+
