@@ -1,36 +1,42 @@
-<h1 style="color: white;">header with the same color as footer</h1>
-
-
 <div class="back">
 
-
+  
     <div class="div-center">
   
-  
+     
       <div class="content">
   
-  
-        <h3>Register</h3>
+        
+        <h3 style="text-align:center;">Register </h3>
         <hr />
-        <form>
-          <div class="form-group">
+        <form [formGroup]="myForm" (ngSubmit)="onSave()" novalidate>
+
+          <div class="form-group mb-1">
             <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            <input type="email" class="form-control" formControlName="email"  placeholder="Email">
+            <span *ngIf="isValidField('email')"  class="text-danger" >{{ getFieldError('email') }}</span>
           </div>
-          <div class="form-group">
+
+          <div class="form-group mb-1">
             <label for="exampleInputEmail1">Username</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            <input type="email" class="form-control" formControlName="username"  placeholder="Username">
+            <span *ngIf="isValidField('username')"  class="text-danger" >{{ getFieldError('username') }}</span>
           </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          
+          <div class="form-group mb-1">
+            <label for="Password">Password</label>
+            <input type="password" class="form-control" formControlName="password"  placeholder="Password">
+            <span *ngIf="isValidField('password')"  class="text-danger" >{{ getFieldError('password') }}</span>
           </div>
-          <div class="form-group mb-3">
+
+          <div class="form-group mb-1">
             <label for="Verify Password">Verify Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Verify Password">
+            <input type="password" class="form-control" formControlName="VerifyPassword"  placeholder="VerifyPassword">
+            <span *ngIf="isValidField('VerifyPassword')"  class="text-danger" >{{ getFieldError('VerifyPassword') }}</span>
           </div>
-          <div class="d-grid gap-2 col-6 mx-auto">
-            <button type="submit" class="btn btn-primary ">Create</button>
+
+          <div class="d-grid gap-2 col-6 mx-auto ">
+            <button type="submit" class="btn btn-primary mt-2">Create</button>
           </div>
           <hr />
           
@@ -45,4 +51,4 @@
 
 
 
-<p>background image</p>
+    <p>add background image and change form colors</p>

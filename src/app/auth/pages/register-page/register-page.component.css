@@ -9,7 +9,7 @@
   .div-center {
     width: 400px;
     height: 400px;
-    background-color: wheat;
+    background-color:  #a5a2a2;
     position: absolute;
     left: 0;
     right: 0;
@@ -20,12 +20,12 @@
     max-height: 100%;
     overflow: auto;
     padding: 1em 2em;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid  #a5a2a2;
     display: table;
   }
   
   div.content {
-    background-color: wheat;
+    background-color: #a5a2a2;
     display: table-cell;
     vertical-align: middle;
   }
